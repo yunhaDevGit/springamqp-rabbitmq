@@ -1,0 +1,5 @@
+rootProject.name = 'springamqp-rabbitmq'
+
+include 'core'
+include 'consumer'
+include 'producer'

@@ -4,7 +4,7 @@
 
 프로젝트 생성 시 아래의 의존성을 추가해줍니다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8596ec29-6a37-43f0-a7bb-08dc874ac607/Untitled.png)
+![image](https://user-images.githubusercontent.com/74949294/167337090-b6dc2c67-d91c-457a-9252-aa87c294384f.png)
 
 그 외에도 필요한 의존성들을 추가해주면 아래 항목들이 추가됩니다.
 
@@ -111,9 +111,3 @@ public class MessagingRabbitMqApplication {
   }
 }
 ```
-
-[https://spring.io/guides/gs/messaging-rabbitmq/](https://spring.io/guides/gs/messaging-rabbitmq/)
-
-[https://dev-gorany.tistory.com/324](https://dev-gorany.tistory.com/324)
-
-[https://velog.io/@hellozin/Spring-Boot와-RabbitMQ-초간단-설명서](https://velog.io/@hellozin/Spring-Boot%EC%99%80-RabbitMQ-%EC%B4%88%EA%B0%84%EB%8B%A8-%EC%84%A4%EB%AA%85%EC%84%9C)

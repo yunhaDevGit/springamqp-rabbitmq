@@ -5,6 +5,14 @@ import com.google.common.collect.Sets;
 import java.util.HashSet;
 
 public class Constants {
+  public static final String CLOUDIT_PATH = "/cloudit";
+  public static final String ACTION_RESULT_PATH = CLOUDIT_PATH + "/result";
+
+  public static final String COMPUTE_QUEUE = "compute-test";
+  public static final String COMPUTE_EXCHANGE = "compute-exchange";
+  public static final String NETWORK_QUEUE = "network-test";
+  public static final String NETWORK_EXCHANGE = "network-exchange";
+
 
   public enum SERVICE_TYPE {
     PRODUCER_API,

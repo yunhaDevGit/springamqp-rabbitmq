@@ -33,16 +33,16 @@ subprojects {
 }
 
 project(':consumer') {
-    bootJar.enabled = false
-    jar.enabled = true
+    bootJar.enabled = true
+    jar.enabled = false
     dependencies {
         implementation project(':core')
     }
 }
 
 project(':producer') {
-    bootJar.enabled = false
-    jar.enabled = true
+    bootJar.enabled = true
+    jar.enabled = false
     dependencies {
         implementation project(':core')
     }

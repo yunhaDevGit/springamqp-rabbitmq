@@ -5,4 +5,4 @@ spring:
     host: 192.168.120.6
     port: 5672
     username: "admin"
-    password: "qwe1212!Q"
+    password: "admin"

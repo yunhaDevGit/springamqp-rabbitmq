@@ -14,12 +14,12 @@ public class ActionQueueSender {
   private final RabbitTemplate rabbitTemplate;
   private final ObjectMapper objectMapper;
 
-  public void sendAsync(String topicExchange, QueueAction action) throws JsonProcessingException {
+  public void sendAsync(String queuename, QueueAction action) throws JsonProcessingException {
     System.out.println("ActionQueueSender - sendAsync");
-    System.out.println("SendingMessage=" + action.toString() + ", topic=" + topicExchange);
+    System.out.println("SendingMessage=" + action.toString() + ", queuename=" + queuename);
     String value = this.objectMapper.writeValueAsString(action);
     byte[] msg = value.getBytes(StandardCharsets.UTF_8);
-    this.rabbitTemplate.convertAndSend(topicExchange, "foo.bar.baz", msg);
+    this.rabbitTemplate.convertAndSend(queuename, msg);
     System.out.println("test");
   }
 

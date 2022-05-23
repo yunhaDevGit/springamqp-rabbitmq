@@ -14,11 +14,19 @@ public class ProducerController {
 
   private final ProducerService producerService;
 
-  @PostMapping("/send/message")
-  public String testQueue(@RequestBody TestDto testDto){
-    System.out.println("ProducerController - testQueue");
+  @PostMapping("/send/compute")
+  public String testCompute(@RequestBody TestDto testDto){
+    System.out.println("ProducerController - testCompute");
     String id = UUID.randomUUID().toString();
     testDto.setId(id);
-    return producerService.testQueue(testDto);
+    return producerService.testCompute(testDto);
+  }
+
+  @PostMapping("/send/network")
+  public String testNetwork(@RequestBody TestDto testDto){
+    System.out.println("ProducerController - testNetwork");
+    String id = UUID.randomUUID().toString();
+    testDto.setId(id);
+    return producerService.testNetwork(testDto);
   }
 }
